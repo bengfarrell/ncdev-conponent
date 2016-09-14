@@ -1,0 +1,28 @@
+<script src="src/ncdev-conponent.js"></script>
+
+<template>
+    <style>
+        :host {
+            display: inline-block;
+            padding: 20px;
+            background-color: black;
+        }
+
+        :host div.text-container {
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+        }
+
+        :host button.color-change-btn {
+            font-size: larger;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="text-container">
+        <p>Hi from a custom component! I have a message for you: </p>
+        <p class="custom-message"></p>
+    </div>
+    <button class="color-change-btn">change background color</button>
+</template>

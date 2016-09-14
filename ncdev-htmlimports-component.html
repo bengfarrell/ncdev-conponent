@@ -1,0 +1,28 @@
+<script src="src/ncdev-htmlimports.js"></script>
+
+<template>
+    <style>
+        ncdev-htmlimports-component {
+            display: inline-block;
+            padding: 20px;
+            background-color: black;
+        }
+
+        ncdev-htmlimports-component div.text-container {
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+        }
+
+        ncdev-htmlimports-component button.color-change-btn {
+            font-size: larger;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="text-container">
+        <p>Hi from a custom component! I have a message for you: </p>
+        <p class="custom-message"></p>
+    </div>
+    <button class="color-change-btn">change background color</button>
+</template>
