@@ -1,5 +1,5 @@
 // Final component: is a custom element, uses HTML Imports, and supports optional Shadow DOM
-class NCDevConponent extends HTMLElement {
+export default class NCDevConponent extends HTMLElement {
     /**
      * set initial class properties
      */

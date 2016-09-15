@@ -35,4 +35,14 @@ gulp.task('ncdev-conponent', function () {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['ncdev-purejs', 'ncdev-htmlimports', 'ncdev-conponent']);
+gulp.task('ncdev-conponent-extended', function () {
+    return browserify({
+        entries: 'src/ncdev-conponent-extended.es6',
+        extensions: ['es2015'], debug: true})
+        .transform(babelify)
+        .bundle()
+        .pipe(source('src/ncdev-conponent-extended.js'))
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['ncdev-purejs', 'ncdev-htmlimports', 'ncdev-conponent', 'ncdev-conponent-extended']);
